@@ -9,4 +9,4 @@ app.use(KoaResponseDuration);//计算请求处理时间中间件
 app.use(KoaResponseHeader);//设置响应头中间件
 app.use(KoaResponseData);//响应数据
 
-app.listen(8080)
+app.listen(8060)

@@ -4,9 +4,9 @@
 
 启动项目：
     
-    后端：进入koa2_server目录，npm install安装所需依赖，命令窗输入node app.js
+    后端：进入koa2_server目录，npm install安装所需依赖，命令窗输入node app.js  默认服务8060端口
     
-    前端：
+    前端：进入online_retailer目录，npm install 安装依赖，命令 npm run dev  默认服务8061端口
 
 架构：
 
