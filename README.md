@@ -2,6 +2,12 @@
 
 可视化电商平台（个人项目）
 
+启动项目：
+    
+    后端：进入koa2_server目录，npm install安装所需依赖，命令窗输入node app.js
+    
+    前端：
+
 架构：
 
     前端：vue+echarts
