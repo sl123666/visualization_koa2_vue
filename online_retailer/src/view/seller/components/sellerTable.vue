@@ -20,6 +20,10 @@
             this.initChart();
             this.getApiData();
             window.addEventListener('resize', this.screenAdapter);//监听浏览器窗口大小变化
+            this.screenAdapter();
+        },
+        destroyed() {
+            window.removeEventListener('resize', this.screenAdapter);
         },
         methods: {
             initChart(){//初始化echarts
@@ -166,7 +170,8 @@
                 this.echartsInstances.setOption(adapterOption);
                 this.echartsInstances.resize();
             }
-        }
+        },
+
     }
 </script>
 
