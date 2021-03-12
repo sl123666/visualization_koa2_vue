@@ -1,17 +1,27 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-  </div>
+    <div class="hello">
+        <h1>{{ msg }}</h1>
+        <button @click="to_view(1)">商家销量排行</button>
+    </div>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
-  data () {
-    return {
-      msg: 'Welcome to Your Vue.js App'
+    name: 'HelloWorld',
+    data () {
+        return {
+          msg: 'Welcome to Your Vue.js App'
+        }
+    },
+    methods: {
+        to_view(type){
+            switch (type) {
+                case 1:
+                    this.$router.push(`/seller`);
+                    break;
+            }
+        }
     }
-  }
 }
 </script>
 
@@ -19,7 +29,7 @@ export default {
 <style scoped lang="less">
 .hello{
     h1{
-      color: pink;
+        color: pink;
     }
 }
 </style>
