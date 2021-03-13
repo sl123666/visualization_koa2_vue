@@ -4,6 +4,7 @@
         <button @click="to_view(1)">商家销量排行</button>
         <button @click="to_view(2)">销量趋势分析</button>
         <button @click="to_view(3)">商家地图分析</button>
+        <button @click="to_view(4)">商家销量排行</button>
     </div>
 </template>
 
@@ -26,6 +27,9 @@ export default {
                     break;
                 case 3:
                     this.$router.push(`/map`);
+                    break;
+                case 4:
+                    this.$router.push(`/rank`);
                     break;
             }
         }

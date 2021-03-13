@@ -4,6 +4,7 @@ import HelloWorld from '@/components/HelloWorld';
 import Seller from '../view/seller/index';
 import Trend from '../view/trend/index';
 import Map from '../view/map/index';
+import Rank from '../view/rank/index'
 
 Vue.use(Router)
 
@@ -28,6 +29,11 @@ export default new Router({
             path: '/map',
             name: 'map',
             component: Map
+        },
+        {
+            path: '/rank',
+            name: 'rank',
+            component: Rank
         }
     ]
 })
