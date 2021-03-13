@@ -3,6 +3,7 @@ import Router from 'vue-router';
 import HelloWorld from '@/components/HelloWorld';
 import Seller from '../view/seller/index';
 import Trend from '../view/trend/index';
+import Map from '../view/map/index';
 
 Vue.use(Router)
 
@@ -22,6 +23,11 @@ export default new Router({
             path: '/trend',
             name: 'trend',
             component: Trend
+        },
+        {
+            path: '/map',
+            name: 'map',
+            component: Map
         }
     ]
 })

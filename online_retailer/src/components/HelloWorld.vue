@@ -3,6 +3,7 @@
         <h1>{{ msg }}</h1>
         <button @click="to_view(1)">商家销量排行</button>
         <button @click="to_view(2)">销量趋势分析</button>
+        <button @click="to_view(3)">商家地图分析</button>
     </div>
 </template>
 
@@ -22,6 +23,10 @@ export default {
                     break;
                 case 2:
                     this.$router.push(`/trend`);
+                    break;
+                case 3:
+                    this.$router.push(`/map`);
+                    break;
             }
         }
     }

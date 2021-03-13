@@ -83,7 +83,7 @@
                 this.echartsInstances.setOption(initOption);
             },
             async getApiData(){
-                let data = await this.$http.get('trend');
+                let data = await this.$http.get(baseURL+'trend');
                 this.apiData = data.data;
                 console.log(this.apiData);
                 this.updateChart();

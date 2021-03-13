@@ -97,7 +97,7 @@
                 this.echartsInstances.setOption(initOption);
             },
             async getApiData(){//获取数据
-                let data = await this.$http.get('seller');
+                let data = await this.$http.get(baseURL + 'seller');
                 this.apiData = data.data;
                 this.apiData.sort((a, b)=>{
                     return a.value - b.value
