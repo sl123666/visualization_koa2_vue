@@ -5,6 +5,7 @@
         <button @click="to_view(2)">销量趋势分析</button>
         <button @click="to_view(3)">商家地图分析</button>
         <button @click="to_view(4)">商家销量排行</button>
+        <button @click="to_view(5)">热销商品占比</button>
     </div>
 </template>
 
@@ -30,6 +31,9 @@ export default {
                     break;
                 case 4:
                     this.$router.push(`/rank`);
+                    break;
+                case 5:
+                    this.$router.push(`/hot`);
                     break;
             }
         }
