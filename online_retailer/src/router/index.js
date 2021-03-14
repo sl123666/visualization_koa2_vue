@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 import HelloWorld from '@/components/HelloWorld';
+import ScreenPage from '@/components/screenPage';
 import Seller from '../view/seller/index';
 import Trend from '../view/trend/index';
 import Map from '../view/map/index';
@@ -16,6 +17,11 @@ export default new Router({
             path: '/',
             name: 'HelloWorld',
             component: HelloWorld
+        },
+        {
+            path: '/screenPage',
+            name: 'screenPage',
+            component: ScreenPage
         },
         {
             path: '/seller',

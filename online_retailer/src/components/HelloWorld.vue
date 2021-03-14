@@ -7,6 +7,7 @@
         <button @click="to_view(4)">商家销量排行</button>
         <button @click="to_view(5)">热销商品占比</button>
         <button @click="to_view(6)">库存销量分析</button>
+        <button class="allData" @click="$router.push(`/screenPage`)">系统总览</button>
     </div>
 </template>
 
@@ -51,5 +52,17 @@ export default {
     h1{
         color: pink;
     }
+    .allData{
+        margin-left: 50px;
+        background: #9a6e3a;
+        border: 0;
+        border-radius: 5px;
+        width: 150px;
+        height: 40px;
+        font-size: 20px;
+        color: #fff;
+        cursor: pointer;
+    }
 }
+
 </style>

@@ -161,7 +161,7 @@
             position: absolute;
             left: 20px;
             top: 20px;
-            z-index: 99999;
+            z-index: 99;
             color: white;
             .title-icon {
                 margin-left: 10px;
