@@ -6,6 +6,7 @@ import Trend from '../view/trend/index';
 import Map from '../view/map/index';
 import Rank from '../view/rank/index';
 import Hot from '../view/hot/index';
+import Stock from '../view/stock/index';
 
 Vue.use(Router)
 
@@ -40,6 +41,11 @@ export default new Router({
             path: '/hot',
             name: 'hot',
             component: Hot
+        },
+        {
+            path: '/stock',
+            name: 'stock',
+            component: Stock
         }
     ]
 })
